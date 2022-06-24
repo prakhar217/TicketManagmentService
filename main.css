@@ -1,0 +1,220 @@
+*{
+    box-sizing: border-box;
+
+    font-family: 'Nanum Gothic', sans-serif;
+}
+body{
+        margin: 0px;
+        padding: 0px;
+}
+:root {
+   --priority1 : rgb(228, 83, 83);
+   --priority2 : rgb(61, 203, 61);
+   --priority3 : rgb(74, 237, 231);
+   --priority4 : rgb(204, 88, 181);
+}
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Poppins:ital,wght@0,100;1,100&display=swap');
+nav{
+    background-color: rgb(44, 44, 44);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1em;
+    padding: 1em;
+    height: 4em;
+}
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4px auto;
+    
+}
+.nav-bar img{
+    width: 50px;
+    height: 50px;
+    object-fit:fill;
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+.logo-text{
+    font-size: 1.7rem;
+    color: rgb(255, 255, 255);
+    /* margin: 8px; */
+}
+.toolBox-Wrapper{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.toolBox-color{
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    padding: 8px;
+    align-items: center;
+    color: white;
+}
+.color-box{
+    display: flex;
+    flex-direction: row;
+    height: 28px;
+    width: 35px;
+    margin: 0px 0.5em;
+    border-radius: 2px;
+}
+.color-box:hover{
+    border: 2px solid rgb(58, 58, 58);
+    border-radius: 2px;
+}
+.toolBox-action{
+    background-color: black;
+    color: white;
+    font-size: 1.6rem;
+    padding: 5px;
+}
+.toolBox-action i{
+    margin:5px;
+} 
+ .toolBox-action i:hover{ 
+    cursor: pointer;
+    transform: scale(120%);
+} 
+
+.color-1{
+    background-color: var(--priority1);
+}
+.color-2{
+    background-color: var(--priority2);
+}
+.color-3{
+    background-color: var(--priority3);
+}
+.color-4{
+    background-color: var(--priority4);
+}
+
+.modal-cont{
+    display: none;
+    position: absolute;
+    height: 50vh;
+    width: 45vw;
+    top: calc((100vh - 50vh)/2);
+    left: calc((100vw - 45vw)/2);
+    background-color: aliceblue;
+    /* display: flex; */
+    align-content:  stretch;
+    transition: all .15s linear 0s;
+    
+}
+.textarea-cont{
+    width: 75%;
+    outline: none;
+    border: none;
+    resize: none;
+    background-color: rgb(241, 243, 242);
+    padding :2rem;
+    font-size: 1.5rem;
+    
+}
+.priority-colors-cont{
+    
+    display: flex;
+    flex-direction: column;
+    grid-gap: 2px;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    width:25%; 
+    background-color:rgb(44, 44, 44);
+
+}
+.priority-color{
+    width: 60%;
+    height: 10%;
+    box-shadow: 5px 5px 0;
+    top: 0;
+    left: 0;
+    transition: all .15s linear 0s;
+    position: relative;
+}
+.priority-color:active{
+    top: 3px;
+    left: 3px;
+    box-shadow: none;
+}
+.active{
+        box-shadow: none;
+        border: 5px solid rgb(233, 231, 231);
+}
+.modal-btn{
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    background-color: rgb(207, 207, 207);
+    box-shadow: 3px 3px 0;
+    transition: all .15s linear 0s;
+}
+.modal-btn:active{
+    top: 3px;
+    left: 3px;
+    box-shadow: none;
+}
+
+.main-container{
+    display: grid;
+    margin: auto;
+    grid-gap: 20px;
+    grid-template-columns: repeat(5,1fr);
+    width: 90%;
+}
+/* .main-container{
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+} */
+.ticket-cont{
+    height: 17rem;
+    width: 16rem;
+    /* border-radius: 4px ; */
+    /* border: 2px solid black; */
+    box-shadow: 2px 2px 5px rgb(175, 173, 173) ;
+    overflow: hidden;
+    /* background-color: aqua; */
+}
+.ticket-color{
+    height: 7%;
+    /* background-color: var(--priority1); */
+}
+.ticket-id{
+    height: 10%;
+    background-color:rgb(255, 255, 255);
+    padding: 5px;
+}
+.task-area{
+    height: 73%;
+    padding: 5px;
+    background-color: rgb(244, 247, 245);
+}
+
+.task-info{
+    display: flex;
+    justify-content: space-between;
+    height: 10%;
+    padding: 5px;
+    align-items: center;
+    font-size: smaller;
+    background-color: rgb(123, 123, 123);
+    color: white;
+}

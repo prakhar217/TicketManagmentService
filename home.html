@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Management Service</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-bar">
+            <div class="logo">
+                <img src="finaltofinalLogo.png" alt="">
+               <span class="logo-text">TickStar</span> 
+            </div>
+            <div class="toolBox-Wrapper">
+                <div class="toolBox-color">
+                    Filter:
+                    <div class="color-box  color-1"></div>
+                    <div class="color-box color-2"></div>
+                    <div class="color-box color-3"></div>
+                    <div class="color-box color-4"></div>
+                </div>
+                <div class="toolBox-action">
+                   <span class="add-btn"><i class="fa fa-plus" aria-hidden="true" ></i></span> 
+                    <span class="remove-btn"><i class="fa fa-times" aria-hidden="true" ></i></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-container">
+
+    </div>
+
+    <div class="modal-cont">
+        <textarea spellcheck = "false"class="textarea-cont"></textarea>
+        <div class="priority-colors-cont">
+            <div class="priority-color color-1"></div>
+            <div class="priority-color color-2"></div>
+            <div class="priority-color color-3"></div>
+            <div class="priority-color color-4 active"></div>
+            <button class="modal-btn">Create Ticket</button>
+        </div>
+    </div>
+    <script src="https://unpkg.com/shortid-dist@1.0.5/dist/shortid-2.2.13.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
